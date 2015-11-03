@@ -1,0 +1,385 @@
+<ion-view title="Preferencias" left-buttons="leftButtons" drag-back>
+    <ion-content has-header="true" padding="">
+
+
+        <!--========================PARTICIPANT===========================-->
+        <div class="item item-divider">
+            Participante
+            <br>
+        </div>
+
+
+        <ion-list>
+            <ion-item ui-sref="address" class="item  item-icon-right">
+                Tiempo a hospedar <i class="icon ion-ios-arrow-right"></i>
+
+            </ion-item>
+
+            <ion-item ui-sref="members" class="item item-icon-right">
+                Sexo <i class="icon ion-ios-arrow-right"></i>
+
+            </ion-item>
+            <ion-item ui-sref="members" class="item  item-icon-right">
+                Pais/es de origen <i class="icon ion-ios-arrow-right"></i>
+
+            </ion-item>
+
+        </ion-list>
+
+
+
+
+
+
+
+
+
+
+        <!--
+        <div class="padding">
+            <div class="semi-padding  clear" ng-class="{dark: timeselected}">
+                <label>Tiempo a hospedar</label>
+            </div>
+        </div>
+-->
+
+        <div class="list">
+            <div class="row">
+                <div class="col">
+                    <div class="list">
+                        <ion-radio ng-model="timeselected" class="clear" ng-class="{dark: timeselected}" ng-value="'A'" name="sex">Anual</ion-radio>
+                        <ion-radio ng-model="timeselected" class="clear" ng-class="{dark: timeselected}" ng-value="'B'" name="sex">Semestral</ion-radio>
+                        <ion-radio ng-model="timeselected" class="clear" ng-class="{dark: timeselected}" ng-value="'C'" name="sex">Trimestral</ion-radio>
+                        <ion-radio ng-model="timeselected" class="clear" ng-class="{dark: timeselected}" ng-value="'D'" name="sex">Corto</ion-radio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="padding">
+            <div class="semi-padding  clear" ng-class="{dark: sexselected}">
+                <label>Sexo</label>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="row">
+                <div class="col">
+                    <div class="list">
+                        <ion-radio ng-model="sexselected" class="clear" ng-class="{dark: sexselected}" ng-value="'E'">Masculino</ion-radio>
+                        <ion-radio ng-model="sexselected" class="clear" ng-class="{dark: sexselected}" ng-value="'F'">Femenino</ion-radio>
+                        <ion-radio ng-model="sexselected" class="clear" ng-class="{dark: sexselected}" ng-value="'G'">Cualquiera</ion-radio>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label"> Pais/es de origen: </span>
+            <textarea placeholder="Pais/es de origen"></textarea>
+        </label>
+
+
+        <!--========================RELIGION===========================-->
+        <div class="item item-divider">
+            Religion
+        </div>
+        <label class="item item-input item-floating-label">
+            <span class="input-label"> Religion: </span>
+            <input type="text" placeholder="¿Que religion practican en la familia?">
+        </label>
+
+        <div class="padding">
+            <div class="semi-padding  clear" ng-class="{dark: frecselected}">
+                <label>¿Con que frecuencia participan en actividades or servicios religiosos?</label>
+            </div>
+        </div>
+
+
+
+        <div class="list">
+            <div class="row">
+                <div class="col">
+                    <div class="list">
+                        <ion-radio ng-model="frecselected" class="clear" ng-class="{dark: frecselected}" ng-value="'E'" Name="frecuency">Semanalmente
+                        </ion-radio>
+                        <ion-radio ng-model="frecselected" class="clear" ng-class="{dark: frecselected}" ng-value="'F'" Name="frecuency">Mensualmente</ion-radio>
+                        <ion-radio ng-model="frecselected" class="clear" ng-class="{dark: frecselected}" ng-value="'G'" Name="frecuency">Ocasionalmente</ion-radio>
+                        <ion-radio ng-model="frecselected" class="clear" ng-class="{dark: frecselected}" ng-value="'G'" Name="frecuency">Nunca</ion-radio>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <label class="item item-input item-floating-label">
+            <span class="input-label"> ¿Alojaria un participante de otra religion?  </span>
+            <textarea placeholder="Comente su posicion acerca de alojar un participante de ninguna u otra religion"></textarea>
+        </label>
+
+
+
+
+
+
+        <!--========================FOOD===========================-->
+
+        <div class="item item-divider">
+            Alimentacion
+        </div>
+        <div class="padding clear" ng-class="{dark: hostvegiselected}">
+            <label>
+                ¿Estarian dispuestos a alojar un participante vegetariano o con dieta especial?</label>
+        </div>
+
+
+
+        <div class="list">
+            <div class="row">
+                <div class="col">
+                    <div class="list">
+                        <ion-radio ng-model="hostvegiselected" class="clear" ng-class="{dark: hostvegiselected}" ng-value="'E'" Name="hostvegetarian">Si
+                        </ion-radio>
+                        <ion-radio ng-model="hostvegiselected" class="clear" ng-class="{dark: hostvegiselected}" ng-value="'F'" Name="hostvegetarian">Preferentemente No</ion-radio>
+                        <ion-radio ng-model="hostvegiselected" class="clear" ng-class="{dark: hostvegiselected}" ng-value="'G'" Name="hostvegetarian">Definitivamente No</ion-radio>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="list list-inset">
+            <label class="item item-input">
+                <textarea placeholder="Comentarios"></textarea>
+            </label>
+        </div>
+
+
+        <hr>
+        <div class="padding" ng-class="restrictionselected">
+            <label>
+                ¿Tiene su familia alguna restricción alimentaria ya sea por razones medicas, religiosas o propias?</label>
+        </div>
+
+        <div class="list padding">
+            <div class="row">
+                <ion-radio ng-model="restrictionselected" class=" col clear" ng-class="{dark: restrictionselected}" ng-value="'E'" Name="restri">Si
+                </ion-radio>
+                <ion-radio ng-model="restrictionselected" class="col clear" ng-class="{dark: restrictionselected}" ng-value="'F'" Name="restri">No</ion-radio>
+
+            </div>
+        </div>
+
+        <label class="item item-input">
+            <textarea placeholder="Comente por favor"></textarea>
+        </label>
+
+
+
+
+        <div class="padding">
+            <label>
+                ¿Se consumen bevidas alcoholicas en su casa?</label>
+        </div>
+
+        <div class="list padding">
+            <div class="row" ng-controller="MainCtrl">
+                <ion-radio ng-model="restrictionselected" class=" col clear" ng-class="{dark: drinkselected}" ng-value="'E'" Name="restri">Si
+                </ion-radio>
+                <ion-radio ng-click="scrollTop()" ng-model="restrictionselected" class="col clear" ng-class="{dark: drinkselected}" ng-value="'F'" Name="restri">No</ion-radio>
+
+            </div>
+        </div>
+
+        <label class="item item-input">
+            <textarea placeholder="Por favor comente cuales son las reglas"></textarea>
+        </label>
+        <div class="item item-divider">
+            Su Hogar
+        </div>
+        <label>   ¿El participante compartira habitación?
+            <div class="list">
+                <div class="row">
+                    <label class="item item-radio">
+                        <input type="radio" name="group">
+                        <div class="item-content">
+                            Si
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+                    </label>
+
+                    <label class="item item-radio">
+                        <input type="radio" name="group">
+                        <div class="item-content">
+                            No
+                        </div>
+                        <i class="radio-icon ion-checkmark"></i>
+
+
+                    </label>
+                </div>
+            </div>
+        </label>
+        <label class="item item-input item-floating-label">
+            <span class="input-label"> ¿Con quien? </span>
+            <input type="text" placeholder="¿Con quien compartira la habitacion?">
+        </label>
+        <div class="padding">
+            <label>
+                ¿Alguien en su familia Fuma?</label>
+        </div>
+
+        <div class="list">
+            <div class="row">
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        Si
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        No
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+
+
+                </label>
+            </div>
+        </div>
+
+        <div class="padding">
+            <label>
+                ¿Dentro de la casa?</label>
+        </div>
+
+        <div class="list">
+            <div class="row">
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        Si
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        No
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+
+
+                </label>
+            </div>
+        </div>
+
+        <div class="padding">
+
+            <label>
+                ¿Como se sentirian alojando a un participante que fuma?</label>
+
+
+            <div class="list">
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        No habria problemas
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        Preferentemente No
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+
+
+                </label>
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        Ok si fuma afuera
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+
+
+                </label>
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        Definitivamente No
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+
+
+                </label>
+
+            </div>
+
+        </div>
+
+
+        <div class="padding">
+
+            <label>
+                ¿Tienen mascotas?</label>
+
+
+            <div class="list">
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        Si, adentro de la casa
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        Si, fuera de la casa
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+                <label class="item item-radio">
+                    <input type="radio" name="group">
+                    <div class="item-content">
+                        No
+                    </div>
+                    <i class="radio-icon ion-checkmark"></i>
+                </label>
+
+            </div>
+
+            <label class="item item-input">
+                <textarea placeholder="Que mascota tiene?"></textarea>
+            </label>
+
+
+        </div>
+
+    </ion-content>
+</ion-view>

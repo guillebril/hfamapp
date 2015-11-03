@@ -1,0 +1,43 @@
+.clear{
+    color:  rgb(180, 180, 180);
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(229, 229, 229);;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+
+.dark{
+    color:  rgb(17, 17, 17);
+}
+.no-top-line{
+ border-top: none;
+}
+
+.semi-padding{
+    padding-left: 5px;
+    padding-right: 5px;}
+
+.select-left{
+
+    left: 0;
+    padding-left: 0px;
+    max-width: 100% !important;
+direction: ltr !important;
+}
+
+.altura-min{
+min-height: 54px;
+}
+ display: none;
+}
+
+

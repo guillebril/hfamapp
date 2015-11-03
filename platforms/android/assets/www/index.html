@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+<script src="lib/ionic-platform-web-client/dist/ionic.io.bundle.min.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <!-- Cordova is bootstrapped by ionic-platform-web-client, uncomment this if you remove ionic-platform-web-client... -->
+<!-- <script src="cordova.js"></script> -->
+
+    <!-- Firebase-->
+    <script src="https://cdn.firebase.com/js/client/2.3.1/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/1.1.3/angularfire.min.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+    <script src="js/ionic-scroller.min.js"></script>
+
+
+
+</head>
+
+<body ng-app="hostfamapp" ng-controller="AppController" class="platform-android platform-cordova platform-webview">
+
+    <ion-nav-bar animation="nav-title-slide-ios7" type="bar-positive" back-button-type="button-icon" back-button-icon="ion-arrow-left-c">
+
+    <ion-nav-back-button>Listo
+  </ion-nav-back-button>
+
+    </ion-nav-bar>
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+
+
+    <script id="menu.html" type="text/ng-template">
+        <ion-view title="'Postulación de Familia'" left-buttons="leftButtons">
+            <ion-content has-header="true">
+                <ion-list>
+                    <ion-item ui-sref="address" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-ios-location"></i>Dirección <i class="icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="preferences" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-pizza">
+                </i>Preferencias <i class="icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="members" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-android-people"></i> Miembros
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="community" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-flag"></i>Comunidad<i class="icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="interests" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-android-bicycle"></i> Intereses
+
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="description" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-clipboard"></i> Descripción
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="home" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-home"></i> Hogar
+                        <i class="icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="photos" class="item item-icon-left item-icon-right">
+                        <i class="icon ion-image"></i> Fotos
+                        <i class=" icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                    <ion-item ui-sref="school" class="item item-icon-left item-icon-right">
+                        <i class="icon  ion-edit"></i> Escuela
+                        <i class=" icon ion-ios-arrow-right"></i>
+                    </ion-item>
+                </ion-list>
+
+                <ion-scroller-top ng-show css-class="button button-assertive" offset="20" text="UP!" scroll-delegate="delegateHandle" animate="true"> </ion-scroller-top>
+            </ion-content>
+        </ion-view>
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
